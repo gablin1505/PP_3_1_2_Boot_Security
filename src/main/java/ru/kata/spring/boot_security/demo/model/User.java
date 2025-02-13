@@ -17,13 +17,10 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "username")
     private String username;
 
-    @Column(name = "password")
     private String password;
 
-    @Column(name = "email")
     private String email;
 
     //Создайте класс Role и свяжите User с ролями так, чтобы юзер мог иметь несколько ролей.
